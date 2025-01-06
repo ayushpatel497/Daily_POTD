@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Solution {
+class Q004_GFG {
     public int countTriplets(int[] arr, int target) {
         // Q. Count all triplets with given sum in sorted array
         int ans = 0;
@@ -43,7 +43,7 @@ class Solution {
             String[] line = br.readLine().split(" ");
             int[] arr = Arrays.stream(line).mapToInt(Integer::parseInt).toArray();
             int target = Integer.parseInt(br.readLine());
-            Solution sol = new Solution();
+            Q004_GFG sol = new Q004_GFG();
             System.out.println(sol.countTriplets(arr, target));
             System.out.println("~");
         }
