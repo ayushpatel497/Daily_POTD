@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class Q030_GFG {
     private ArrayList<ArrayList<Integer>> result = new ArrayList<>();
     private int[] row;
 
