@@ -1,0 +1,25 @@
+class Solution {
+  public:
+    bool stringStack(string &pat, string &tar) {
+        // Q. String stack
+        // code here
+        int pn = pat.size();
+        int tn = tar.size();
+        
+        int i = pn - 1, j = tn - 1;
+        
+        while(i >= 0 && j >= 0){
+            if(pat[i] == tar[j]){
+                i--;
+                j--;
+            }
+            else{
+                i -= 2;
+            }
+            
+            if(j == -1)
+              return true;
+        }
+        return false;
+    }
+};
