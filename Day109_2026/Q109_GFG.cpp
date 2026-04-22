@@ -1,0 +1,16 @@
+class Solution {
+    bool check(int l, int r, int x, int y){
+        if(l > r) return false;
+        int m = l + (r - l) / 2;
+        int pxm = pow(x, m);
+        if(pxm == y) return true;
+        if(pxm >= 0 && pxm < y) return check(m + 1, r, x, y);
+        return check(l, m - 1, x, y);
+    }
+  public:
+    bool isPower(int x, int y) {
+        // Q. Check for Power
+        // code here
+        return check(0, 32, x, y);
+    }
+};
